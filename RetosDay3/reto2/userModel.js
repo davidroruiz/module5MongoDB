@@ -11,7 +11,7 @@ const UserSchema = new moongose.Schema({
         type: String,
         validate: [
             function (password) {
-                return password.length >= 6 != password.includes(" ");
+                return password.length >= 6 ||password.includes(" ") ;
             },
             'El password deberia ser mas largo']
     },
@@ -34,7 +34,10 @@ const UserSchema = new moongose.Schema({
     comments: String,
     rol: String,
     enum:["User","Full-User","Admin"],
-    follow: String
+    follow: [{type: moongose.Schema.Types.ObjectId, ref: "User"}],
+    photo: [{type: moongose.Schema.Types.ObjectId, ref: "Photo"}],
+
+
 
    
 });

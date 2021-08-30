@@ -77,10 +77,10 @@ async function findPhotosTheUser(idUser) {
 
 async function ObtenerTimeline(idUser) {
     try {
-        const ObtenerTimeline = await User.findOne({ _id: idUser}).populate('follow').populate('photo');
+        const ObtenerTimeline = await User.findOne({ _id: idUser},{nombreUsuario:1,follow: 1, photo:1}).populate('follow').populate('photo');
         console.log(ObtenerTimeline);
     } catch (error) {
         console.log(error);
     }
 }
-ObtenerTimeline("611d8e854fd9951934afeed6");
+//ObtenerTimeline("611d8e854fd9951934afeed6");

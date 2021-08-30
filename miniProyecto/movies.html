@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/formularioDatos.js"></script>
+    <title>Movies</title>
+</head>
+
+<body>
+
+    <main id="main">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="professionales.html">PROFESSIONALES</a></li>
+                    <li><a class="active" href="movies.html">MOVIES</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <secion class="imagenPrincipal">
+            <img class="principal" src="https://elcorso.es/wp-content/uploads/2018/06/portada-960x466.jpg">
+        </secion>
+
+
+        <section class="peliculas">
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/loki-1623136040.jpg">
+            <img src="https://www.milcomics.com/fotos/2542021142617192248.jpg">
+            <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2020/03/cartel-pelicula-viuda-negra-1888005.jpg?itok=GeLRVgVl">
+            <img src="https://pbs.twimg.com/media/EDDnTFTXoAIoOdH.jpg">
+            <img src="https://cines.com/files/2016/04/doctor-strange-poster.jpg">
+            <img src="https://img.ecartelera.com/noticias/fotos/62300/62339/1.jpg">
+            <img src="https://sm.ign.com/ign_es/screenshot/default/wintersoldier-1615217300464_ww54.jpg">
+            <img src="https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/cinefilia/quien-es-quien-black-panther/06a_bp_p143_panther-1/137847779-1-esl-ES/06A_BP_P143_Panther-1.jpg?resize=480:*">
+        </section>
+        
+        <section class="formularioProfessional">
+            <form>
+
+                <h2>Crear Movies</h2>
+                <input id="id" placeholder="ID" />
+                <input type="text" id="title" placeholder="Titulo" />
+                <input type="number" id="releaseYear" placeholder="Año de Nacimiento" />
+                <input id="actors" placeholder="Actors" />
+                <input id="nationality" placeholder="Nacionalidad" />
+                <input id="director" placeholder="Director" />
+                <input id="writer" placeholder="Guionista" />
+                <input type="text" id="language" placeholder="Idioma" />
+                <input type="text" id="plataform" placeholder="Plataforma" />
+                <input type="text" id="isMCU" placeholder="Esta en la MCU" />
+                <input type="text" id="mainCharacterName" placeholder="Nombre Personaje Principal" />
+                <input type="text" id="producer" placeholder="Productor" />
+                <input type="text" id="distributor" placeholder="Distribuidor" />
+                <input type="text" id="genre" placeholder="Genero" />
+
+                <article class="buttonStu">
+
+                    <button class="crearProfessional" type="button" onclick="getMovies()">Mostrar Movies</button>
+                    <button class="crearProfessional" type="button" onclick="postMovies()">Crear Movies</button>
+                    <button class="crearProfessional" type="button" onclick="putMovies()">Actualizar Movies</button>
+                    <button class="crearProfessional" type="button" onclick="deleteMovies()">Eliminar Movies</button>
+                </article>
+            </form>
+
+        </section>
+        <section id="datos">
+            <h2>Datos</h2>
+
+            <p id="titulo"></p>
+            <p id="ayoNacimiento"></p>
+            <p id="actors"></p>
+            <p id="nacionalidad"></p>
+            <p id="director"></p>
+            <p id="guionista"></p>
+            <p id="idioma"></p>
+            <p id="plataforma"></p>
+            <p id="EstaMCU"></p>
+            <p id="personajePrincipal"></p>
+            <p id="productor"></p>
+            <p id="distribuidor"></p>
+            <p id="genero"></p>
+
+        </section>
+<footer id=footer>
+    <p>@Copyright David Rodriguez Ruiz</p>
+</footer>
+    </main>
+</body>
+
+</html>

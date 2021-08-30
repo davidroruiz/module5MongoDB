@@ -112,7 +112,7 @@ app.put("/usuarios", (req, res) => {
     const id = req.query.id;
     const update = req.body;
 
-    User.findByIdAndUpdate(id, update, (err, userUpdate) => {
+    User.findByIdAndUpdate(id, update, {new:true},(err, userUpdate) => {
         if (err) res.status(500).send({ message: `Error al acctualizar el User: ${err}` })
         res.status(200).send({ user: userUpdate })
     })
@@ -259,7 +259,7 @@ app.put("/follow", (req, res) => {
     const id = req.query.id;
     const update = req.body;
 
-    User.findByIdAndUpdate(id, update, (err, userUpdate) => {
+    User.findByIdAndUpdate(id, update, {new:true},(err, userUpdate) => {
         if (err) res.status(500).send({ message: `Error al actualizar el User: ${err}` })
         res.status(200).send({ user: userUpdate })
     })
@@ -270,7 +270,7 @@ app.put("/unfollow", (req, res) => {
 
     const id = req.query.id;
 
-    User.findByIdAndUpdate(id, { "follow": null }, (err, userUpdate) => {
+    User.findByIdAndUpdate(id, { "follow": null }, {new:true},(err, userUpdate) => {
         if (err) res.status(500).send({ message: `Error al actualizar el User: ${err}` })
         res.status(200).send({ user: userUpdate })
     })

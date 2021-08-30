@@ -22,7 +22,7 @@ let autorDocument = new Autor({
     libro : "611cfca987eb2466280a6923"
 })
 
-
+/*
 //bookDocument.save(checkRespuesta);
 //autorDocument.save(checkRespuesta);
 
@@ -111,3 +111,4 @@ async function findBook() {
 }
 
 //findBook();
+*/

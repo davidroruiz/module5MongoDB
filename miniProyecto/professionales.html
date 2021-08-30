@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/formularioDatos.js"></script>
+    <title>Professionales</title>
+</head>
+<body>
+
+    <main id="main">
+        <header>
+            <nav>
+                <ul>
+                    <li><a class="active" href="professionales.html">PROFESSIONALES</a></li>
+                    <li><a href="movies.html">MOVIES</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <secion class="imagenPrincipal">
+            <img class="principal" src="https://elcorso.es/wp-content/uploads/2018/06/portada-960x466.jpg">
+        </secion>
+        
+        
+        <section class="peliculas">
+            <img src="https://cl.buscafs.com/www.tomatazos.com/public/uploads/images/319560/319560.jpeg">
+            <img src="https://lagaceta.me/media/news/cover/2021-05-24_10-22-59.jpg">
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/viuda-negra-poster-fotogramas-1616529267.png">
+            <img src="https://www.guardadorapido.com/wp-content/uploads/2020/09/spider-man_ps4_portada.jpeg">
+            <img src="https://www.wallpaperkiss.com/wimg/b/145-1452346_big.jpg">
+            <img src="https://pbs.twimg.com/media/EvwU2X_XcAENbwE.jpg">
+            <img src="https://images.mediotiempo.com/yrdpEkk4TX0aOmlBIfhXrB9Q-oc=/958x596/uploads/media/2021/04/21/falcon-soldado-invierno-exito-universo.jpg">
+            <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2021/05/black-panther-2-2321207.jpg">
+        </section>
+        
+        <section class="formularioProfessional">
+            <form>
+
+                <h2>Crear Professionales</h2>
+                <input id="id" placeholder="ID" />
+                <input type="text" id="name" placeholder="Nombre" />
+                <input type="number" id="age" placeholder="Edad" />
+                <input type="text" id="genre" placeholder="Genero" />
+                <input type="number" id="weight" placeholder="Peso" />
+                <input type="number" id="height" placeholder="Altura" />
+                <input type="text" id="hairColor" placeholder="Color de Pelo" />
+                <input type="text" id="eyeColor" placeholder="Color de ojos" />
+                <input type="text" id="race" placeholder="Raza" />
+                <input id="isRetired" placeholder="Esta Retirado" />
+                <input type="text" id="nationality" placeholder="Nacionalidad" />
+                <input type="number" id="oscarNumbers" placeholder="Numeros de Oscars" />
+                <input type="text" id="profession" placeholder="Profesion" />
+
+                <article class="buttonStu">
+
+                <button class="crearProfessional" type="button" onclick="getProfessional()">Mostrar Professional</button>
+                <button class="crearProfessional" type="button" onclick="postProfessionales()">Crear Professional</button>
+                <button class="crearProfessional" type="button" onclick="putProfessionales()">Actualizar Professional</button>
+                <button class="crearProfessional" type="button" onclick="deleteProfessionales()">Eliminar Professional</button>
+            </article>
+            </form>
+           
+        </section>
+        <section id="datos">
+            <h2>Datos</h2>
+
+            <p id="nombre"></p>
+            <p id="edad"></p>
+            <p id="genero"></p>
+            <p id="peso"></p>
+            <p id="altura"></p>
+            <p id="colorPelo"></p>
+            <p id="colorOjos"></p>
+            <p id="raza"></p>
+            <p id="EstaRetired"></p>
+            <p id="nacionalidad"></p>
+            <p id="numeroOscars"></p>
+            <p id="profesion"></p>
+
+
+        </section>
+        <footer id=footer>
+            <p>@Copyright David Rodriguez Ruiz</p>
+        </footer>
+    </main>
+</body>
+</html>
